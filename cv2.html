@@ -1,0 +1,179 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+    <title>Wayan Savary</title>
+    <link rel="stylesheet" href="./cv2.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+</head>
+
+<body>
+ <img id="logo" src="C:\Users\wayan\OneDrive\Documents\codevisualstudio\logo_v7.png" alt="logo de la fromation DIA1">
+ <div id="top"></div>
+
+ <!-- bouton qui envoye vers la carte de visite -->
+ <a href="./carte_de_visite.html">
+     <button id="bouton" value = "carte" type = "submit">
+carte de visite
+</button></a>
+
+    <div class="nom" id="nom">
+        <h1>WAYAN SAVARY</h1>
+        <h3>Étudiant</h3>
+        <h3>En recherche d'un contrat de stage</h3>
+    </div>
+  <div id="principale"> 
+<div class="block-cv" id="moi">
+    <div id="profile">
+        <h2>Profil</h2>
+        <p>Je suis un étudiant motivé en première année de développement informatique, je recherche un stage puis une alternance dans le développement de logiciel embarqué.</p>
+        <p>6 mars 2003  18 ans</p>
+        <p>7 rue roquefeuil 29200 Brest</p>
+    </div>
+
+    <div id="compétences">
+        <h2>Compétences</h2>
+        <ul>
+            <li>Permis AM</li>
+            <li>Langage C</li>
+            <li>Ligne de commandes Linux</li>
+            <li>Câblage</li>
+            <li>Anglais niveau B1</li>
+            <li>Espagnol niveau A2</li>
+        </ul>
+    </div>
+
+    <div id="skill">
+        <h2>Soft Skills</h2>
+        <ul>
+            <li>Persévérant</li>
+            <li>Attentif</li>
+            <li>Autonome</li>
+            <li>Sérieux</li>
+            <li>Assidu</li>
+        </ul>
+    </div>
+
+    <div id="contact">
+        <h2>Contactez-Moi</h2>
+        <p>Tél : 07 78 18 27 83</p>
+        <p>Mail : wayan.savary@viacesi.fr</p>
+        <p><a href="https://www.linkedin.com/in/wayan-savary">LinkedIn</a></p>
+    </div>
+
+</div>
+
+<div class="blob-cv" id="Experience">
+    <div id="experience">
+        <h2>Expériences professionnelles</h2>
+
+        <h4>Projet base de données</h4>
+        <p><i>CESI</i> | oct 2021</p>
+        <p>- Création et gestion d'une base de données</p>
+
+        <h4>Projet infrastructure Système, base de données et scripting</h4>
+        <p><i>CESI</i> | sep - oct 2021</p>
+        <p>- Création d'une machine virtuelle Linux et d'une infrastructure web</p>
+
+        <h4>Monteur-Câbleur</h4>
+        <p><i>MVG Microwave Vision Group</i> | aout 2021</p>
+        <ul>
+            <li>Teste de carte éléctronique</li>
+            <li>Asemblage</li>
+            <li>Peinture</li>
+            <li>Inventaire</li>
+        </ul>
+
+        <h4>Projet charriot suiveur</h4>
+        <p><i>Lycée Vauban Brest</i> | mars - juin 2021</p>
+        <p>- Création d'un robot capable de suivre automatiquement une personne en fauteuil roulant pour l'aider à transporter ces courses</p>
+
+        <h4>Stage de 3ème</h4>
+        <p><i>ENSTA Bretagne</i> | 2018</p>
+        <ul>
+            <li>Modélisation 3D</li>
+            <li>Conception de plan d'une pièce</li>
+            <li>Robotique</li>
+        </ul>
+        <p id="robot">Suite à ce stage j'ai découvert que je suis plus intéressé par la programmation du robot que par la conception de celui-ci</p>
+    </div>
+</div>
+</div>
+
+<div class="yeji" id="formation">
+   <div id="Formation"><h2>Formations</h2></div> 
+   
+    <h4 id="CCNA1">Certifibation CCNA1</h4>
+ <div id="bas">
+    <div id="CESI"><h4>CESI école supérieur de l'alternance</h4>
+    <p><i>Développement informatique en première année</i></p>
+    <p>titre RNCP de niveau 5 (bac+2)</p></div>
+
+    <div id="Vauban"><h4>Lycée Vauban</h4>
+    <p><i>Baccalauréat STI2D spécialitée SIN</i></p>
+    <p><i>Mention: Assez bien</i></p></div>
+
+
+</div>
+</div>
+
+
+</body>
+    <script>
+
+        
+//autre façon de changer de logo
+        // let liste = [
+        // "C:\\Users\\wayan\\OneDrive\\Documents\\codevisualstudio\\logo_v7.png",
+        // 'file:///C:\\Users\\wayan\\OneDrive\\Documents\\codevisualstudio\\ceciletowel.jpeg',
+        // 'file:///C:\\Users\\wayan\\OneDrive\\Documents\\codevisualstudio\\cecilefatal.jpeg'
+        // ];
+
+        // let photoIndex=0;
+
+        // function changelogo(){
+        //     photoIndex=(photoIndex+1)% liste.length;
+        //     document.querySelector("#logo").src = liste[photoIndex];
+        // }
+
+//fonction pour changer de logo
+        let countlogo =1;
+        function LOGO(){
+            if (countlogo % 2 == 0) {
+                //il faudra sans doute changer l'emplacement de ce ficher avec le votre
+            document.querySelector('#logo').src = "C:\\Users\\wayan\\OneDrive\\Documents\\codevisualstudio\\logo_v7.png";
+            countlogo +=1;
+            }
+            
+            else{ 
+                //de même ici
+                document.querySelector('#logo').src = 'file:///C:\\Users\\wayan\\OneDrive\\Documents\\codevisualstudio\\logo_hydra_png_v2.png';
+                countlogo+=1;
+            }
+        }
+        //fonction pour inverser les bloc block-cv et blob-cv
+        let etat = true;
+        function inversion() {
+            
+            if (etat == true){
+            console.dir(document.querySelector("#principale"));
+            document.querySelector("#principale").style.flexDirection = "row-reverse";
+            etat = false;
+            }
+            else{
+            document.querySelector("#principale").style.flexDirection = "row";
+            etat = true;
+        }
+        }
+
+        //quand on click sur le logo on appel la fonction LOGO
+        document.querySelector('#logo').addEventListener('click', LOGO);
+        //quand on click sur le bloc principale on appel la fonction inversion
+        document.querySelector('#principale').addEventListener('click', inversion);
+
+
+    </script>
+</html>
+

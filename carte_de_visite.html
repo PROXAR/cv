@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>carte de visite</title>
+        <link rel="stylesheet" href="./carte_de_visite.css">
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    </head>
+
+    <body>
+        <!-- bouton qui envoye vers le cv -->
+        <a href="./cv2.html"><button id="bouton" value = "cv" type = "submit">
+            CV
+            </button></a>
+        
+        <div id="coore">
+            <img id="logo" src="C:\Users\wayan\OneDrive\Documents\codevisualstudio\logo_v7.png" alt="logo de la fromation DIA1">
+        
+
+        <div id="coordonnée">
+            <h2>Wayan Savary</h2>
+            <h3>7 rue roquefeuil</h3>
+            <h3>07 78 18 27 83</h3>
+            <h3>wayan.savary@viacesi.fr</h3>
+            <h3>CESI</h3>
+        </div>
+    </div>
+    </body>
+    <script>
+    let countlogo =1;
+        function LOGO(){
+            if (countlogo % 2 == 0) {
+                //il faudra sans doute changer l'emplacement de ce ficher avec le votre
+            document.querySelector('#logo').src = "C:\\Users\\wayan\\OneDrive\\Documents\\codevisualstudio\\logo_v7.png";
+            countlogo +=1;
+            }
+            
+            else{ 
+                //de même ici
+                document.querySelector('#logo').src = 'file:///C:\\Users\\wayan\\OneDrive\\Documents\\codevisualstudio\\logo_hydra_png_v2.png';
+                countlogo+=1;
+            }
+        }
+        document.querySelector('#logo').addEventListener('click', LOGO);
+        </script>
+</html>

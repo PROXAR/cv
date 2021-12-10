@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    max-width: 760px;
+    margin: auto;
+
+}
+#top {
+    background-color: rgb(0, 205, 147);
+    padding: 50px;
+}
+#bouton {
+    display: flex;
+    flex-flow: row;
+    justify-items: flex-end;
+    
+}
+#logo {
+    max-width: 100px;
+    margin-bottom: -20px;
+    position: absolute;
+    }
+
+#nom h1 {
+    margin-bottom: -4px;
+}
+#nom h3 {
+
+    margin: -4px;
+    margin-left: 4px;
+}
+
+#nom {
+    min-width: 300px;
+}
+
+#principale {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    gap: 8%;
+}
+
+.block-cv {
+    background-color: rgb(0, 205, 147);
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 250px;
+    display: flex;
+    flex-flow: column wrap;
+
+}
+#moi {
+    max-width: 250px;
+}
+h2 {
+    color: rgb(27, 53, 224);
+}
+
+
+.blob-cv {
+    max-width: 430px;
+    min-width: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+
+}
+
+#robot {
+    font-size: 0.9rem;
+}
+#experience h4 {
+    margin-bottom: -15px;
+    color: rgb(135, 10, 207);
+    
+}
+
+
+.yeji {
+    background-color: rgb(0, 205, 147);
+    
+}
+
+.yeji  p {
+    margin: -3px;
+    margin-left: 2px;
+}
+
+.yeji h4 {
+    margin-bottom: 5px;
+    color: rgb(135, 10, 207);
+}
+
+  #Formation {
+    color: rgb(27, 53, 224);
+    text-align: center;
+    margin-top: -20px;
+
+}
+
+
+#CCNA1 {
+    text-align: center;
+}
+
+#bas {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;    
+}
+
+#Vauban {
+    padding-right: 10px;
+}
+#CESI {
+    padding-left: 10px;  
+} 
+
+
+@media (max-width: 850px) {
+    #principale {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 0;
+    }
+
+    #moi {
+        max-width: 100%;
+    }
+
+    #bas {
+        display:flex;
+        flex-flow: column wrap;
+        justify-content: center;    
+    }
+   
+    #Vauban {
+        padding-left: 10px;
+    }
+}
+body{
+    border:solid 0.1px black;
+}

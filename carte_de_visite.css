@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    max-width: 600px;
+    margin: auto;
+    border: solid 1px black;
+
+}
+#back {
+    max-width: 500px;
+    position: absolute;
+}
+#coore {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    background-image: url(https://lh4.googleusercontent.com/proxy/LfC3BMfRmBFq4VwQ9S800WDswi6H6ENE7n1QgbHrIeZyqrHQEkSVB7oDUQnWN7r2IEwZp_9FINdhB_EQWSxuR0t-8Ew-iGoYWwir=s0-d);
+}
+#logo {     
+    max-width: 250px;
+
+    }
+#coordonnée{
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+
+@media (max-width: 500px) {
+    #coore {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background-image: url(https://lh4.googleusercontent.com/proxy/LfC3BMfRmBFq4VwQ9S800WDswi6H6ENE7n1QgbHrIeZyqrHQEkSVB7oDUQnWN7r2IEwZp_9FINdhB_EQWSxuR0t-8Ew-iGoYWwir=s0-d);
+    }
+}
