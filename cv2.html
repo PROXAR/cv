@@ -157,7 +157,8 @@ carte de visite
         let etat = true;
         function inversion() {
             
-            if (etat == true){
+    if (window.screen.width >850){
+            if (etat == true && window.screen.width >850){
             console.dir(document.querySelector("#principale"));
             document.querySelector("#principale").style.flexDirection = "row-reverse";
             etat = false;
@@ -166,6 +167,10 @@ carte de visite
             document.querySelector("#principale").style.flexDirection = "row";
             etat = true;
         }
+    }
+    else{
+        document.querySelector("#principale").style.flexDirection = "column";
+    }
         }
 
         //quand on click sur le logo on appel la fonction LOGO
